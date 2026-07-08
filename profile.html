@@ -1,174 +1,174 @@
-/* Pastel Pink Portfolio Theme */
+<!DOCTYPE html>
+<html lang="th">
 
-* {
-    box-sizing: border-box;
-}
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ประวัติส่วนตัว | Portfolio</title>
+
+
+<style>
 
 body {
-    font-family: "Prompt", Arial, sans-serif;
-    margin: 0;
-    background: linear-gradient(
-        135deg,
-        #ffe5ec,
-        #ffc2d1,
-        #ffb3c6
-    );
-    color: #5a3d4a;
+
+    margin:0;
+
+    font-family:"Tahoma", sans-serif;
+
+    background:linear-gradient(135deg,#ff9ad5,#c77dff);
+
+    color:#4a235a;
+
 }
 
 
-/* Header */
+
+/* ส่วนหัว */
 
 header {
-    background: linear-gradient(
-        135deg,
-        #ff8fab,
-        #fb6f92
-    );
 
-    color: white;
-    text-align: center;
-    padding: 30px;
+    background:linear-gradient(90deg,#ff4da6,#8e44ad);
 
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    padding:30px;
 
-    box-shadow: 0 8px 20px rgba(255,111,145,0.3);
+    text-align:center;
+
+    color:white;
+
+    border-bottom-left-radius:50px;
+
+    border-bottom-right-radius:50px;
+
 }
 
 
 header h1 {
-    font-size: 40px;
-    margin: 10px;
+
+    font-size:40px;
+
 }
 
 
-/* Navigation */
+
+/* เมนู */
 
 nav {
-    margin-top: 20px;
+
+    margin-top:20px;
+
 }
 
 
 nav a {
 
-    display: inline-block;
+    text-decoration:none;
 
-    background: #fff0f3;
+    color:white;
 
-    color: #d6336c;
+    background:#ff85c0;
 
-    text-decoration: none;
+    padding:12px 20px;
 
-    padding: 12px 22px;
+    margin:5px;
 
-    margin: 5px;
+    border-radius:30px;
 
-    border-radius: 30px;
+    display:inline-block;
 
-    font-weight: bold;
+    font-weight:bold;
 
-    transition: 0.3s;
+    transition:0.3s;
 
 }
 
 
 nav a:hover {
 
-    background: #d6336c;
+    background:white;
 
-    color:white;
+    color:#9b59b6;
 
-    transform: translateY(-5px);
+    transform:scale(1.1);
 
 }
 
 
 
-/* Content Card */
+/* กล่องข้อมูล */
 
-.home,
-.content {
+.container {
 
-    width: 85%;
+    width:85%;
 
-    margin: 40px auto;
+    margin:40px auto;
 
-    padding: 35px;
-
-
-    background: rgba(255,255,255,0.85);
+}
 
 
-    border-radius: 30px;
+
+.card {
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
 
 
-    box-shadow:
-    0 10px 25px rgba(214,51,108,0.15);
 
+.card h2 {
+
+    color:#d63384;
 
     text-align:center;
 
+}
 
-    animation: show 1s ease;
+
+
+.card p {
+
+    font-size:18px;
+
+    line-height:1.8;
 
 }
 
 
 
-/* หัวข้อ */
+.profile-img {
 
-h2 {
-
-    color:#d6336c;
-
-    font-size:32px;
-
-}
-
-
-h3 {
-
-    color:#c9184a;
-
-}
-
-
-
-/* Profile Image */
-
-img {
+    display:block;
 
     width:220px;
 
     height:220px;
 
-    object-fit:cover;
+    margin:auto;
 
     border-radius:50%;
 
+    object-fit:cover;
 
-    border:10px solid #ffccd5;
-
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.15);
+    border:8px solid #ff69b4;
 
 }
 
 
 
-/* Education List */
+/* รายการ */
 
 ul {
 
-    text-align:left;
-
-    background:#fff0f3;
-
-    padding:25px;
-
-    border-radius:20px;
+    font-size:18px;
 
     line-height:2;
 
@@ -176,67 +176,11 @@ ul {
 
 
 
-/* Work Card */
-
-.work {
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #fff0f3,
-        #ffccd5
-    );
-
-
-    padding:25px;
-
-    margin:20px;
-
-
-    border-radius:25px;
-
-
-    box-shadow:
-    0 5px 15px rgba(0,0,0,0.1);
-
-
-    transition:0.3s;
-
-}
-
-
-.work:hover {
-
-    transform:scale(1.05);
-
-    background:#ffc8dd;
-
-}
-
-
-
-/* Contact */
-
-.content p {
-
-    font-size:18px;
-
-    background:#fff0f3;
-
-    padding:12px;
-
-    border-radius:15px;
-
-}
-
-
-
-/* Footer */
+/* footer */
 
 footer {
 
-    background:#c9184a;
+    background:#8e44ad;
 
     color:white;
 
@@ -244,31 +188,231 @@ footer {
 
     padding:15px;
 
-    margin-top:50px;
+    margin-top:40px;
 
 }
 
 
 
-/* Animation */
-
-@keyframes show {
-
-    from {
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
+</style>
 
 
-    to {
+</head>
 
-        opacity:1;
 
-        transform:translateY(0);
 
-    }
+<body>
 
-}
+
+<header>
+
+
+<h1>💗 ประวัติส่วนตัว 💜</h1>
+
+<p>Personal Profile</p>
+
+
+
+<nav>
+
+<a href="index.html">หน้าแรก</a>
+
+<a href="profile.html">ประวัติส่วนตัว</a>
+
+<a href="education.html">ประวัติการศึกษา</a>
+
+<a href="amard.html">ผลงาน</a>
+
+<a href="contact.html">ช่องทางการติดต่อ</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+<div class="container">
+
+
+
+<div class="card">
+
+
+<img class="profile-img" src="profile.jpg" alt="รูปโปรไฟล์">
+
+
+<h2>ข้อมูลส่วนตัว</h2>
+
+
+<p>
+ชื่อ-นามสกุล : ................................................
+</p>
+
+<p>
+ชื่อเล่น : ................................................
+</p>
+
+<p>
+วัน/เดือน/ปีเกิด : ................................................
+</p>
+
+<p>
+อายุ : ........ ปี
+</p>
+
+<p>
+สัญชาติ : ไทย
+</p>
+
+<p>
+กำลังศึกษาอยู่ระดับ : มัธยมศึกษาปีที่ 6
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>🌸 เกี่ยวกับฉัน</h2>
+
+
+<p>
+
+ฉันเป็นนักเรียนระดับชั้นมัธยมศึกษาปีที่ 6
+
+มีความสนใจในการเรียนรู้สิ่งใหม่ ๆ
+
+ชอบพัฒนาตนเอง ฝึกฝนทักษะต่าง ๆ
+
+และพร้อมที่จะนำความรู้ไปต่อยอดในอนาคต
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>✨ งานอดิเรก</h2>
+
+
+<ul>
+
+<li>ฟังเพลงและดูภาพยนตร์</li>
+
+<li>อ่านหนังสือและค้นคว้าความรู้เพิ่มเติม</li>
+
+<li>ออกแบบและสร้างผลงานต่าง ๆ</li>
+
+<li>ใช้เวลาว่างพัฒนาทักษะด้านเทคโนโลยี</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>🌟 ความสามารถ</h2>
+
+
+<ul>
+
+<li>สามารถใช้งานคอมพิวเตอร์และโปรแกรมพื้นฐาน</li>
+
+<li>มีความคิดสร้างสรรค์ในการทำงาน</li>
+
+<li>สามารถทำงานร่วมกับผู้อื่นได้</li>
+
+<li>มีความรับผิดชอบและตรงต่อเวลา</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>💜 เป้าหมายในอนาคต</h2>
+
+
+<p>
+
+ตั้งใจศึกษาต่อในระดับมหาวิทยาลัย
+
+พัฒนาความรู้และทักษะของตนเอง
+
+เพื่อประกอบอาชีพที่มั่นคง
+
+และสามารถสร้างประโยชน์ให้กับสังคม
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>🌈 คติประจำใจ</h2>
+
+
+<p style="text-align:center;font-size:22px;color:#9b59b6;">
+
+"ความพยายามในวันนี้ คือความสำเร็จในวันข้างหน้า"
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<footer>
+
+<p>© 2026 My Portfolio | Pink Purple Theme 💗💜</p>
+
+</footer>
+
+
+
+
+</body>
+
+</html>
