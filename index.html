@@ -1,31 +1,277 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="th">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | Portfolio</title>
 
-    <title>Portfolio สุรัตน์ดา</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: "Tahoma", sans-serif;
+            background: linear-gradient(135deg, #ff9ad5, #c77dff);
+            color: #4a235a;
+        }
+
+
+        header {
+
+            background: linear-gradient(90deg, #ff4da6, #8e44ad);
+            padding: 30px;
+            text-align: center;
+            color: white;
+
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+        }
+
+
+        header h1 {
+
+            font-size: 45px;
+            margin: 10px;
+
+        }
+
+
+        header p {
+
+            font-size: 20px;
+
+        }
+
+
+        nav {
+
+            margin-top: 20px;
+
+        }
+
+
+        nav a {
+
+            text-decoration: none;
+            color: white;
+            background: #ff85c0;
+
+            padding: 12px 20px;
+            margin: 5px;
+
+            border-radius: 30px;
+
+            display: inline-block;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+
+        }
+
+
+        nav a:hover {
+
+            background: #ffffff;
+            color: #9b59b6;
+
+            transform: scale(1.1);
+
+        }
+
+
+
+        .box {
+
+            width: 80%;
+
+            margin: 40px auto;
+
+            background: white;
+
+            padding: 40px;
+
+            text-align: center;
+
+            border-radius: 35px;
+
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+        }
+
+
+
+        .box h2 {
+
+            color: #d63384;
+
+            font-size: 35px;
+
+        }
+
+
+
+        .box p {
+
+            font-size: 20px;
+
+            line-height: 1.8;
+
+        }
+
+
+
+        img {
+
+            width: 220px;
+
+            height: 220px;
+
+            border-radius: 50%;
+
+            border: 8px solid #ff69b4;
+
+            object-fit: cover;
+
+        }
+
+
+
+        .button {
+
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 15px 30px;
+
+            background: linear-gradient(
+                90deg,
+                #ff69b4,
+                #9b59b6
+            );
+
+            color: white;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+        }
+
+
+
+        .button:hover {
+
+            opacity: 0.8;
+
+        }
+
+
+
+        footer {
+
+            background: #8e44ad;
+
+            color:white;
+
+            text-align:center;
+
+            padding:15px;
+
+            margin-top:50px;
+
+        }
+
+
+
+    </style>
 
 </head>
 
-<body bgcolor="#3366ff"> 
-<a href="index.html" >หน้าแรก</a>
-<a href="profile.html" >ประวัติส่วนตัว</a>    
-<a href="education.html" >ประวัติการศึกษา</a>    
-<a href="award.html" >ผลงาน</a>    
-<a href="contact.html" >ช่องทางการติดต่อ</a>        
-<img src="images/00e582d10eb1638be5db363e0b7324a4.jpg">
+
+<body>
 
 
-<h1>นางสาวสุรัตน์ดา ดีปราศัย</h1>
+<header>
+
+    <h1>🌸 Portfolio ของฉัน 🌸</h1>
+
+    <p>เว็บไซต์แนะนำตัวสำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+
+
+    <nav>
+
+        <a href="index.html">หน้าแรก</a>
+
+        <a href="profile.html">ประวัติส่วนตัว</a>
+
+        <a href="education.html">ประวัติการศึกษา</a>
+
+        <a href="amard.html">ผลงาน</a>
+
+        <a href="contact.html">ช่องทางการติดต่อ</a>
+
+    </nav>
+
+
+</header>
 
 
 
-<p>นักเรียนชั้นม.6/1</p>
+<div class="box">
+
+
+    <!-- ใส่รูปตัวเองโดยเปลี่ยนชื่อไฟล์ -->
+
+    <img src="profile.jpg" alt="รูปโปรไฟล์">
+
+
+    <h2>ยินดีต้อนรับเข้าสู่ Portfolio</h2>
+
+
+    <p>
+
+        สวัสดีค่ะ/ครับ<br>
+
+        เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว
+
+        ประวัติการศึกษา ความสามารถ และผลงานต่าง ๆ
+
+        ของฉัน
+
+    </p>
+
+
+    <p>
+
+        💗 นักเรียนชั้นมัธยมศึกษาปีที่ 6 <br>
+
+        💜 พร้อมเรียนรู้และพัฒนาตนเอง
+
+    </p>
+
+
+    <a class="button" href="profile.html">
+
+        เข้าชมประวัติส่วนตัว
+
+    </a>
+
+
+</div>
 
 
 
-<p>โรงเรียนพานทอง</p>
+
+<footer>
+
+    <p>© 2026 My Portfolio | Pink Purple Theme 💗💜</p>
+
+</footer>
 
 
 
