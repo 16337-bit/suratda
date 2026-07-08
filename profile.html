@@ -1,27 +1,274 @@
-<!DOCTYPE html>
+/* Pastel Pink Portfolio Theme */
 
-<html>
+* {
+    box-sizing: border-box;
+}
 
-<head>
-
-    <title>ประวัติส่วนตัว</title>
-
-</head>
-
-<body>
-
-
-
-<h1>ประวัติส่วนตัว</h1>
-
-
-
-<p>
-  ชื่อ สุรัตน์ดา ดีปราศัย <br>
-  ชื่อเล่น มิ้น <br>
-</p>
+body {
+    font-family: "Prompt", Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(
+        135deg,
+        #ffe5ec,
+        #ffc2d1,
+        #ffb3c6
+    );
+    color: #5a3d4a;
+}
 
 
-</body>
+/* Header */
 
-</html>
+header {
+    background: linear-gradient(
+        135deg,
+        #ff8fab,
+        #fb6f92
+    );
+
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    box-shadow: 0 8px 20px rgba(255,111,145,0.3);
+}
+
+
+header h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+
+/* Navigation */
+
+nav {
+    margin-top: 20px;
+}
+
+
+nav a {
+
+    display: inline-block;
+
+    background: #fff0f3;
+
+    color: #d6336c;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    margin: 5px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    background: #d6336c;
+
+    color:white;
+
+    transform: translateY(-5px);
+
+}
+
+
+
+/* Content Card */
+
+.home,
+.content {
+
+    width: 85%;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+
+    background: rgba(255,255,255,0.85);
+
+
+    border-radius: 30px;
+
+
+    box-shadow:
+    0 10px 25px rgba(214,51,108,0.15);
+
+
+    text-align:center;
+
+
+    animation: show 1s ease;
+
+}
+
+
+
+/* หัวข้อ */
+
+h2 {
+
+    color:#d6336c;
+
+    font-size:32px;
+
+}
+
+
+h3 {
+
+    color:#c9184a;
+
+}
+
+
+
+/* Profile Image */
+
+img {
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+
+    border:10px solid #ffccd5;
+
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* Education List */
+
+ul {
+
+    text-align:left;
+
+    background:#fff0f3;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    line-height:2;
+
+}
+
+
+
+/* Work Card */
+
+.work {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #fff0f3,
+        #ffccd5
+    );
+
+
+    padding:25px;
+
+    margin:20px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+
+    transition:0.3s;
+
+}
+
+
+.work:hover {
+
+    transform:scale(1.05);
+
+    background:#ffc8dd;
+
+}
+
+
+
+/* Contact */
+
+.content p {
+
+    font-size:18px;
+
+    background:#fff0f3;
+
+    padding:12px;
+
+    border-radius:15px;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background:#c9184a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* Animation */
+
+@keyframes show {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
